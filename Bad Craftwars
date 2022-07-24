@@ -1,0 +1,362 @@
+local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wall%20v3')))()
+local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/Jxereas/UI-Libraries/main/notification_gui_library.lua", true))()
+
+local chatModule = game:GetService("Players")
+
+local plyr = game.Players.LocalPlayer;
+
+local w = library:CreateWindow("Bad Craftwars")
+
+local a = w:CreateFolder("Summon Shortcuts")
+local b = w:CreateFolder("Teleports")
+local c = w:CreateFolder("Client")
+local d = w:CreateFolder("Settings")
+
+getgenv().skipcooldown = false;
+
+
+a:Dropdown("Summons", {"Come forth Ignis, Slave of the Fire!",
+                    "funy pumpkins",
+                    "temple gib riches B)",
+                    "lux sucks",
+                    "i eat water everyday with a fork",
+                    "spectre i challenge you",
+                    "me enchant with melon",
+                    "Come forth Rex, Ruler of the Universe!",
+                    "Final Chaos.",
+                    "stinky void",
+                    "Final general's army is incoming",
+                    "accept my sacrifice",
+                    "noob dragon god",
+                    "i require salt",
+                    "no more time",
+                    "divine aqua idot",
+                    "cthulhu sucks",
+                    "suck on fire",
+                    "dominus sucks",
+                    "Elemental War is a very bad event",
+                    "dungeon sucks",
+                    "alpha crystals bad!!",
+                    "Come forth Aqua, Slave of the Water!",
+                    "when azurewrath",
+                    "top 5 not saw videos ever",
+                    "tenebris sucks",
+                    "Come forth Lux!",
+                    "money = omega pro",
+                    "Come forth Rex!",
+                    "Come forth Ignis!",
+                    "money = super pro",
+                    "Chimera forth us",
+                    "Haunted Zone",
+                    "money = money",
+                    "ok fatty",
+                    "DawnOfTime()"}, true, function(value)
+    summon = value;
+    if summon == "Come forth Ignis, Slave of the Fire!" then
+        local lol = Notification.new("info", "Summons", "You have selected: Ingis. Cost: 25 Universe Souls.")
+        lol:deleteTimeout(3)
+        
+    elseif summon == "funy pumpkins" then
+        local lol = Notification.new("info", "Summons", "You have selected: Pumpkin Biome. Cost: 1 Melon.")
+        lol:deleteTimeout(3)
+
+    elseif summon == "temple gib riches B)" then
+        local lol = Notification.new("info", "Summons", "You have selected: Temple of the Spectre. Cost: 1 Hydra's Artifact.")
+        lol:deleteTimeout(3)
+
+    elseif summon == "lux sucks" then
+        local lol = Notification.new("info", "Summons", "You have selected: Lux. Cost: 1 Nebula Shard.")
+        lol:deleteTimeout(3)
+
+    elseif summon == "i eat water everyday with a fork" then
+        local lol = Notification.new("info", "Summons", "You have selected: Aquantaneous. Cost: 1 Pure Water Orb.")
+        lol:deleteTimeout(3)
+        
+    elseif summon == "spectre i challenge you" then
+        local lol = Notification.new("info", "Summons", "You have selected: Spectre's Boss Rush. Cost: 1 Sky Scythe.") 
+        lol:deleteTimeout(3)
+
+    elseif summon == "me enchant with melon" then
+        local lol = Notification.new("info", "Summons", "You have selected: Enchanted Melon. Cost: 1 Melon.")
+        lol:deleteTimeout(3)
+
+    elseif summon == "Come forth Rex, Ruler of the Universe!" then
+        local lol = Notification.new("info", "Summons", "You have selected: Rex. Cost: 1 Nebula Shard.")
+        lol:deleteTimeout(3)
+
+    elseif summon == "Final Chaos." then
+        local lol = Notification.new("info", "Summons", "You have selected: Final Chaos. Cost: 1 Chaos Orb.")
+        lol:deleteTimeout(3)
+
+    elseif summon == "stinky void" then
+        local lol = Notification.new("info", "Summons", "You have selected: Void. Cost: 1 Hydra's Artifact.")
+        lol:deleteTimeout(3)
+
+    elseif summon == "Final general's army is incoming" then
+        local lol = Notification.new("info", "Summons", "You have selected: General's Chaos Army. Cost: 1 Almighty Orb.")
+        lol:deleteTimeout(3)
+        
+    elseif summon == "accept my sacrifice" then
+        local lol = Notification.new("info", "Summons", "You have selected: Ash. Cost: 1 Unholy Core.")
+        lol:deleteTimeout(3)
+
+    elseif summon == "noob dragon god" then
+        local lol = Notification.new("info", "Summons", "You have selected: Dragon God. Cost: 1 Almighty Orb.")
+        lol:deleteTimeout(3)
+
+    elseif summon == "i require salt" then
+        local lol = Notification.new("info", "Summons", "You have selected: Venenum. Cost: Pure Toxic Orb.")
+        lol:deleteTimeout(3)
+
+    elseif summon == "no more time" then
+        local lol = Notification.new("info", "Summons", "You have selected: Sanctus. Cost: 1 Almighty Orb.")
+        lol:deleteTimeout(3)
+
+    elseif summon == "divine aqua idot" then
+        local lol = Notification.new("info", "Summons", "You have selected: Divine Aqua. Cost: 25 Enchanted Ruler Spellbooks.")
+        lol:deleteTimeout(3)
+
+    elseif summon == "cthulhu sucks" then
+        local lol = Notification.new("info", "Summons", "You have selected: Cthulhu. Cost: 5 Water Orbs.")
+        lol:deleteTimeout(3)
+
+    elseif summon == "suck on fire" then
+        local lol = Notification.new("info", "Summons", "You have selected: Flamma. Cost: 1 Pure Fire Orb.")
+        lol:deleteTimeout(3)
+
+    elseif summon == "dominus sucks" then
+        local lol = Notification.new("info", "Summons", "You have selected: Dominus. Cost: 1 Enchanted Uldragunn.")
+        lol:deleteTimeout(3)
+
+    elseif summon == "Elemental War is a very bad event" then
+        local lol = Notification.new("info", "Summons", "You have selected: Elemental War. Cost: 1 Shard of the Universe.")
+        lol:deleteTimeout(3)
+
+    elseif summon == "dungeon sucks" then
+        local lol = Notification.new("info", "Summons", "You have selected: Dungeon. Cost: 1 Hydra's Artifact.")
+        lol:deleteTimeout(3)
+
+    elseif summon == "alpha crystals bad!!" then
+        local lol = Notification.new("info", "Summons", "You have selected: Alpha Biome. Cost: 10 Divumite Ore.")
+        lol:deleteTimeout(3)
+
+    elseif summon == "Come forth Aqua, Slave of the Water!" then
+        local lol = Notification.new("info", "Summons", "You have selected: Aqua. Cost: 25 Universe Souls.")
+        lol:deleteTimeout(3)
+
+    elseif summon == "when azurewrath" then
+        local lol = Notification.new("info", "Summons", "You have selected: Azurewrath. Cost: 2 Almighty Orbs.")
+        lol:deleteTimeout(3)
+
+    elseif summon == "top 5 not saw videos ever" then
+        local lol = Notification.new("info", "Summons", "You have selected: Dank. Cost: 1 Pepega.")
+        lol:deleteTimeout(3)
+
+    elseif summon == "tenebris sucks" then
+        local lol = Notification.new("info", "Summons", "You have selected: Tenebris. Cost: 25 Universe Souls.")
+        lol:deleteTimeout(3)
+        
+    elseif summon == "Come forth Lux!" then
+        local lol = Notification.new("info", "Summons", "You have selected: Divine Lux. Cost: 1 Divine Artifact.")
+        lol:deleteTimeout(3)
+
+    elseif summon == "money = omega pro" then
+        local lol = Notification.new("info", "Summons", "You have selected: Greedier. Cost: 10 Golden Ingots.")
+        lol:deleteTimeout(3)
+        
+    elseif summon == "Come forth Rex!" then
+        local lol = Notification.new("info", "Summons", "You have selected: Divine Rex. Cost: 1 Divine Artifact.")
+        lol:deleteTimeout(3)
+
+    elseif summon == "Come forth Ignis" then
+        local lol = Notification.new("info", "Summons", "You have selected: Divine Ignis. Cost: 1 Divine Artifact.")
+        lol:deleteTimeout(3)
+        
+    elseif summon == "money = super pro" then
+        local lol = Notification.new("info", "Summons", "You have selected: Greed. Cost: 1 Golden Ingot.")
+        lol:deleteTimeout(3)
+        
+    elseif summon == "Chimera forth us" then
+        local lol = Notification.new("info", "Summons", "You have selected: Chimera's Lair. Cost: 1 Hydra's Artifact.")
+        lol:deleteTimeout(3)
+
+    elseif summon == "Haunted Zone" then
+        local lol = Notification.new("info", "Summons", "You have selected: Haunted Biome. Cost: 2 Pumpkin Pieces.")
+        lol:deleteTimeout(3)
+
+    elseif summon == "money = money" then
+        local lol = Notification.new("info", "Summons", "You have selected: Upgraded Greedier. Cost: 25 Golden Ingots.")
+        lol:deleteTimeout(3)
+
+    elseif summon == "ok fatty" then
+        local lol = Notification.new("info", "Summons", "You have selected: Iris's Hideout. Cost: 5 Unholy Cores.")
+        lol:deleteTimeout(3)
+
+    elseif summon == "DawnOfTime()" then
+        local lol = Notification.new("info", "Summons", "You have selected: Dawn of Time. Cost: 1 Almighty Orb.")
+        lol:deleteTimeout(3)
+    end
+    
+end)
+
+
+a:Button("Summon!", function()
+    if summon then
+        start(summon)
+    end
+end)
+
+function start(summon)
+    chatModule:Chat(summon)
+    local yes = Notification.new("success", "Summons", "Successfully summoned the selected choice.")
+    yes:deleteTimeout(2)
+end
+
+function spawnlocation(ok)
+    print("hi")
+    if plyr.character then
+        plyr.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Map.Baseplate.CFrame
+        local yes = Notification.new("success", "Teleports", "Successfully teleported to spawn.")
+        yes:deleteTimeout(2)
+    end
+end
+
+function mines()
+    if plyr.character then
+        plyr.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Mines1.Part.CFrame
+        local yes = Notification.new("success", "Teleports", "Successfully teleported to the Mines.")
+        yes:deleteTimeout(2)
+    end
+end
+
+function minigames()
+    if plyr.character then
+        plyr.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Map.ArchiverRoom.Part.CFrame
+        local yes = Notification.new("success", "Teleports", "Successfully teleported to the Minigames.")
+        yes:deleteTimeout(2)
+    end
+end
+
+function archiver()
+    if plyr.Character then
+        plyr.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Archiver.HumanoidRootPart.CFrame
+        local yes = Notification.new("success", "Teleports", "Successfully teleported to the Archiver.")
+        yes:deleteTimeout(2)
+    end
+end
+
+function praefactus()
+    if plyr.Character then
+        plyr.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Model.Praefactus.HumanoidRootPart.CFrame
+        local yes = Notification.new("success", "Teleports", "Successfully teleported to Praefactus.")
+        yes:deleteTimeout(2)
+    end
+end
+
+function skip()
+    chatModule:Chat("/skip")
+    local yes = Notification.new("success", "Client", "Successfully skipped the biome.")
+    yes:deleteTimeout(2)
+    if getgenv().skipcooldown then
+        local cooldown = Notification.new("message", "Cooldown", "Time remaining: 30 seconds.")
+        wait(1)
+        cooldown:changeBody("Time remaining: 29 seconds.")
+        wait(1)
+        cooldown:changeBody("Time remaining: 28 seconds.")
+        wait(1)
+        cooldown:changeBody("Time remaining: 27 seconds.")
+        wait(1)
+        cooldown:changeBody("Time remaining: 26 seconds.")
+        wait(1)
+        cooldown:changeBody("Time remaining: 25 seconds.")
+        wait(1)
+        cooldown:changeBody("Time remaining: 24 seconds.")
+        wait(1)
+        cooldown:changeBody("Time remaining: 23 seconds.")
+        wait(1)
+        cooldown:changeBody("Time remaining: 22 seconds.")
+        wait(1)
+        cooldown:changeBody("Time remaining: 21 seconds.")
+        wait(1)
+        cooldown:changeBody("Time remaining: 20 seconds.")
+        wait(1)
+        cooldown:changeBody("Time remaining: 19 seconds.")
+        wait(1)
+        cooldown:changeBody("Time remaining: 18 seconds.")
+        wait(1)
+        cooldown:changeBody("Time remaining: 17 seconds.")
+        wait(1)
+        cooldown:changeBody("Time remaining: 16 seconds.")
+        wait(1)
+        cooldown:changeBody("Time remaining: 15 seconds.")
+        wait(1)
+        cooldown:changeBody("Time remaining: 14 seconds.")
+        wait(1)
+        cooldown:changeBody("Time remaining: 13 seconds.")
+        wait(1)
+        cooldown:changeBody("Time remaining: 12 seconds.")
+        wait(1)
+        cooldown:changeBody("Time remaining: 11 seconds.")
+        wait(1)
+        cooldown:changeBody("Time remaining: 10 seconds.")
+        wait(1)
+        cooldown:changeBody("Time remaining: 9 seconds.")
+        wait(1)
+        cooldown:changeBody("Time remaining: 8 seconds.")
+        wait(1)
+        cooldown:changeBody("Time remaining: 7 seconds.")
+        wait(1)
+        cooldown:changeBody("Time remaining: 6 seconds.")
+        wait(1)
+        cooldown:changeBody("Time remaining: 5 seconds.")
+        wait(1)
+        cooldown:changeBody("Time remaining: 4 seconds.")
+        wait(1)
+        cooldown:changeBody("Time remaining: 3 seconds.")
+        wait(1)
+        cooldown:changeBody("Time remaining: 2 seconds.")
+        wait(1)
+        cooldown:changeBody("Time remaining: 1 seconds.")
+        wait(1)
+        cooldown:changeBody("Time remaining: Finished.")
+        wait(1.5)
+        cooldown:delete()
+
+
+    end
+end
+
+b:Button("Spawn", function()
+    local ok = true;
+    spawnlocation()
+end)
+
+b:Bind("Bind",Enum.KeyCode.E,function()
+    skip()
+end)
+
+b:Button("Mines", function()
+    mines()
+end)
+
+b:Button("Minigames", function()
+    minigames()
+end)
+
+b:Button("Archiver", function()
+    archiver()
+end)
+
+b:Button("Praefactus", function()
+    praefactus()
+end)
+
+c:Button("Skip Biome", function()
+    skip()
+end)
+
+c:DestroyGui()
+
+d:Toggle("Cooldown notifications", function(bool)
+    getgenv().skipcooldown = bool
+end)
