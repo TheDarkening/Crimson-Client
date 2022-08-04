@@ -50,6 +50,7 @@ a:Dropdown("Summons", {"Come forth Ignis, Slave of the Fire!",
                     "Haunted Zone",
                     "money = money",
                     "ok fatty",
+                    "praefactus idot",
                     "DawnOfTime()"}, true, function(value)
     summon = value;
     if summon == "Come forth Ignis, Slave of the Fire!" then
@@ -194,6 +195,9 @@ a:Dropdown("Summons", {"Come forth Ignis, Slave of the Fire!",
 
     elseif summon == "DawnOfTime()" then
         local lol = Notification.new("info", "Summons", "You have selected: Dawn of Time. Cost: 1 Almighty Orb.")
+        lol:deleteTimeout(3)
+    elseif summon == "praefactus idot" then
+        local lol = Notification.new("info", "Summons", "You have selected: Praefactus. Cost: 50 Enchanted Ruler Spellbooks.")
         lol:deleteTimeout(3)
     end
     
